@@ -1,4 +1,4 @@
-package basics;
+package DAY_01;
 
 public class HCF {
     public static void main(String[] args) {

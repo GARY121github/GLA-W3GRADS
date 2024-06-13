@@ -1,6 +1,4 @@
-package arrays;
-
-import java.util.Arrays;
+package DAY_02.arrays;
 
 public class Largest_Element {
     public static void main(String[] args) {

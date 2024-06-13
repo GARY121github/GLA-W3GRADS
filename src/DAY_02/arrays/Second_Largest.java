@@ -1,4 +1,4 @@
-package arrays;
+package DAY_02.arrays;
 
 public class Second_Largest {
     public static void main(String[] args) {

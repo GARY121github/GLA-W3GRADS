@@ -1,4 +1,4 @@
-package arrays.Reversal_Algo;
+package DAY_02.arrays.Reversal_Algo;
 
 import java.util.Arrays;
 

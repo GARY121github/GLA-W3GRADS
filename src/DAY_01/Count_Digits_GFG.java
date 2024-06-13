@@ -1,4 +1,4 @@
-package basics;
+package DAY_01;
 
 // question link -> https://www.geeksforgeeks.org/problems/count-digits5716/1
 public class Count_Digits_GFG {

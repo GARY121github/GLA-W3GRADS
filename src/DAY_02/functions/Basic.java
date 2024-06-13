@@ -1,4 +1,4 @@
-package functions;
+package DAY_02.functions;
 
 public class Basic {
     public static void main(String[] args) {
