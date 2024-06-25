@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS_01;
 
 public class Car {
     String name;
