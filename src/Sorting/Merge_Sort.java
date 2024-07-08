@@ -4,10 +4,6 @@ import java.util.Arrays;
 
 public class Merge_Sort {
     public static void main(String[] args) {
-        // int[] arr ={1 , 2 , 5};
-        // int[] brr = {1 , 2 , 3 , 4 , 5};
-        // int[] ans = mergeTwoSortedArray(arr , brr);
-        // System.out.println(Arrays.toString(ans));
         int[] arr = {3 ,4, 1, 8 ,4 ,3 , 2};
         int[] ans = mergeSort(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(ans));
