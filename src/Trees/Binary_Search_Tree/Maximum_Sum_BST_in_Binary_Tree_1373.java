@@ -1,21 +1,23 @@
 package Trees.Binary_Search_Tree;
-
 import Trees.TreeNode;
-
-public class Validate_Binary_Search_Tree_98 {
+public class Maximum_Sum_BST_in_Binary_Tree_1373 {
     class Solution {
+        int maxSum = 0;
+        public int maxSumBST(TreeNode root) {
+            isValidbst(root);
+            return this.maxSum;
+        }
         class Pair{
             boolean isValid;
             long max;
             long min;
+            int sum;
             public Pair(){
                 isValid = true;
                 max = Long.MIN_VALUE;
                 min = Long.MAX_VALUE;
+                sum = 0;
             }
-        }
-        public boolean isValidBST(TreeNode root) {
-            return isValidbst(root).isValid;
         }
 
         private Pair isValidbst(TreeNode root){
@@ -31,10 +33,14 @@ public class Validate_Binary_Search_Tree_98 {
                 self.isValid = true;
                 self.max = Math.max(root.val , right.max);
                 self.min = Math.min(root.val , left.min);
+                self.sum = left.sum + right.sum + root.val;
+
+                this.maxSum = Math.max(this.maxSum , self.sum);
             }
             else{
                 self.isValid = false;
             }
+
             return self;
         }
     }
