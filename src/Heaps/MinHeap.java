@@ -32,7 +32,11 @@ public class MinHeap {
     }
 
     public int remove(){
-        swap(0 , this.list.size());
+        if(this.list.size() == 0){
+            System.out.println("LIST IS EMPTY");
+            return -1;
+        }
+        swap(0 , this.list.size()-1);
         int element = this.list.remove(this.list.size()-1);
         downHeapify(0);
         return element;
